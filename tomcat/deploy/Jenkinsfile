@@ -1,24 +1,14 @@
 pipeline{
-
     agent any     
-       
-  tools{
-
+     tools{
         maven "jenkins-mvn"
-
     }
-
     environment{
-
         tomcatWebLocation="\"C:\\Surekha\\Jenkins_training\\apache-tomcat-9.0.55\\apache-tomcat-9.0.55\\webapps\""
-
         tomcatBinLocation="\"C:\\Surekha\\Jenkins_training\\apache-tomcat-9.0.55\\apache-tomcat-9.0.55\\bin\""
-
         buildLocation="C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Tomcat_WebAPP_Pipeline\\mywebapp\\target\\mywebapp.war"
-
        }
-         
-         stages{       
+      stages{       
                       
              stage('Git Checkout'){
       
