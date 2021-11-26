@@ -1,12 +1,14 @@
-pipeline{​​​​​
+pipeline{
 
-    agent any     tools{​​​​​
+    agent any     
+       
+  tools{
 
         maven "jenkins-mvn"
 
-    }​​​​​
+    }
 
-    environment{​​​​​
+    environment{
 
         tomcatWebLocation="\"C:\\Surekha\\Jenkins_training\\apache-tomcat-9.0.55\\apache-tomcat-9.0.55\\webapps\\""
 
